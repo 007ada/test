@@ -4,7 +4,7 @@ APP_NAME=$1                                                     # Name of the ap
 VERSION=$2                                                      # App version
 USERNAME=$3                                                     # Docker Hub username
 
-sbt ad31779d4ee49d5ad5162bf1429c32e2e9933f3b dist                                       # Update app secret and build Play app
+sbt  dist                                       # Update app secret and build Play app
 
 cd ./target/universal                                           # Go to directory where application zip is located
 rm -rf ./tmp ./dist                                             # Deleted existing directories if those exist
